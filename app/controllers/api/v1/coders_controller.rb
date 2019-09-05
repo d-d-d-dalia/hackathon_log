@@ -3,6 +3,7 @@ class Api::V1::CodersController < ApplicationController
     before_action :find_coder, only: [:update]
 
     def index
+        #byebug
       @coders = Coder.all
       render json: @coders
     end

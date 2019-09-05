@@ -1,6 +1,5 @@
 class Api::V1::HackathonsController < ApplicationController
 
-
     before_action :find_hackathon, only: [:update]
 
   def index
