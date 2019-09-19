@@ -1,6 +1,6 @@
 class Api::V1::CodersController < ApplicationController
 
-    before_action :find_coder, only: [:update]
+    before_action :find_coder, only: [:update, :show]
 
     def index
         #byebug
@@ -15,6 +15,10 @@ class Api::V1::CodersController < ApplicationController
       else
         render json: { errors: @coder.errors.full_messages }, status: :unprocessible_entity
       end
+    end
+
+    def show
+        find_coder
     end
   
     private
