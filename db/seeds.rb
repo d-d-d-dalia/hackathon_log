@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Coder.create([
+{name: 'Dalia', language: 'javascript'}, 
+{name: 'Miriam', language: 'ruby'}, 
+{name: 'Yancy', language: 'python'}, 
+{name: 'Sarah', language: 'ruby'} ])
+
+Hackathon.create([
+{title: 'the best hackathon', date: Time.local(2018, 7, 8), coder_id: 1},
+{title: 'the second best hackathon', date: Time.local(2018, 6, 30), coder_id: 2},
+{title: 'the third best hackathon', date: Time.local(2019, 2, 10), coder_id: 3}
+])
